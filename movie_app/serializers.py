@@ -74,5 +74,5 @@ class ReviewValidateSerializer(serializers.Serializer):
 
         if movies.count() == 0:
             raise ValidationError(f'movie with {movie_id} does not exists')
-        
+
         return movie_id
